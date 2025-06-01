@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style_main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo">
+        <i class="bx bxs-bank"></i>
+        <span class="logo_name">Банк Грінченка</span>
+      </div>
+      <div class="bank_logo">
+        <img class="logo_up" src="/img/logo.png" alt="" />
+      </div>
+      <div class="name">
+        <span class="fop">ФОП Іван Петренко</span>
+        <span class="inn">ІПН: 0123456789</span>
+      </div>
+      <ul class="nav_links">
+        <li>
+          <a href="/main_menu.html">
+            <i class="bx bx-home"></i>
+            <span class="link_name">Головна сторінка</span>
+          </a>
+        </li>
+        <li>
+          <a href="/rakhunok.html">
+            <i class="bx bx-wallet"></i>
+            <span class="link_name">Рахунки</span>
+          </a>
+        </li>
+        <li>
+          <a href="/caption.html">
+            <i class="bx bx-pen"></i>
+            <span class="link_name">Документи на підпис</span>
+          </a>
+        </li>
+        <li>
+          <a href="/operation.html">
+            <i class="bx bx-money"></i>
+            <span class="link_name">Операції в гривні</span>
+          </a>
+        </li>
+        <li>
+          <a href="/card.html">
+            <i class="bx bx-credit-card"></i>
+            <span class="link_name">Картки</span>
+          </a>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-coin-stack"></i>
+              <span class="link_name">Кредити</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Кредити</a></li>
+            <li><a href="/credits-active.html">Діючі кредити</a></li>
+            <li><a href="/credits-proposition.html">Кредитні пропозиції</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-box"></i>
+              <span class="link_name">Депозити</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Депозити</a></li>
+            <li><a href="/my-deposit.html">Діючі депозити</a></li>
+            <li>
+              <a href="/depost-proposition.html">Депозитні пропозиції</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Налаштування</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Налаштування</a></li>
+            <li><a href="/settings.html">Змінити пароль</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/gift.html">
+            <i class="bx bx-gift"></i>
+            <span class="link_name">Отримати подарунок</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <i class="bx bx-exit"></i>
+            <span class="link_name">Вихід</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">Головна сторінка</span>
+        </div>
+        <div class="create-button">
+          <a href="/create.html" class="plus"
+            >+ <span class="create">Створити платіж</span></a
+          >
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="balance">
+          <div class="cash">
+            <span class="name_balanc">Баланс</span
+            ><span class="what_balanc">123 000.00 UAH</span>
+          </div>
+          <hr color="#35aab9" />
+          <div class="rahynku">
+            <span class="name_balanc">Рахунки</span>
+            <span class="sum">Сума</span>
+            <span class="what_balanc">Сума в UAH</span>
+          </div>
+          <div class="uah">
+            <span class="name_balanc">UAH</span>
+            <span class="sum">100 000.00</span>
+            <span class="what_balanc">100 000.00</span>
+          </div>
+          <div class="usd">
+            <span class="name_balanc">USD</span>
+            <span class="sum">550.01</span>
+            <span class="what_balanc">23 000.00</span>
+          </div>
+          <div class="all_rahynku">
+            <a class="all_rahynku_arrow" href="/rakhunok.html">Всі рахунки ></a>
+          </div>
+        </div>
+        <div class="quote-slider">
+          <div class="slide active">
+            <h2>Цитати великих</h2>
+            <img src="/img/Грінченко.jpg" alt="Борис Грінченко" />
+            <blockquote>
+              <p>
+                «Інтелігенція вся в нас змоскалена. Вчиться вона
+                по-московському, читає по-московському, завсіди говорить сама і
+                завсіди чує круг себе мову тільки московську; рідну ж мову в
+                мужичих устах вважає за “хахлацький жаргон”»
+              </p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <h2>Цитати великих</h2>
+            <img src="/img/Грінченко.jpg" alt="Борис Грінченко" />
+            <blockquote>
+              <p>
+                «Освіта — найсильніша зброя, яку можна використати для зміни
+                світу»
+              </p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <h2>Цитати великих</h2>
+            <img src="/img/Грінченко.jpg" alt="Борис Грінченко" />
+            <blockquote>
+              <p>«Не досить мати світлий розум — треба ще мати добре серце»</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <h2>Цитати великих</h2>
+            <img src="/img/Грінченко.jpg" alt="Борис Грінченко" />
+            <blockquote>
+              <p>«Зло від своїх Найтяжче уражає»</p>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <h2>Цитати великих</h2>
+            <img src="/img/Грінченко.jpg" alt="Борис Грінченко" />
+            <blockquote>
+              <p>
+                «За що стільки муки, горя та сліз додають людям люди, коли й так
+                життя таке коротке й сумне?»
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="charity-block">
+          <h2>Благодійність</h2>
+          <form class="charity-form">
+            <div class="form-group">
+              <label for="company">Компанія</label>
+              <select id="company">
+                <option>Оберіть компанію</option>
+                <option>Крила Надії (благодійний фонд)</option>
+                <option>Благодійний фонд «Повернись живим»</option>
+                <option>БФ Спільнота Стерненка</option>
+                <option>Благодійний фонд Сергія Притули</option>
+                <option>
+                  Благодійний фонд допомоги безпритульним тваринам
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="card">Карта/Рахунок</label>
+              <input
+                type="text"
+                id="card"
+                placeholder="Введіть номер картки або рахунок"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Сума</label>
+              <input
+                type="number"
+                id="amount"
+                placeholder="Вкажіть суму в UAH"
+              />
+            </div>
+
+            <button type="submit" class="donate-button" disabled>
+              Пожертвувати
+            </button>
+          </form>
+        </div>
+        <div class="alert-map-wrapper">
+          <h2>Мапа повітряних тривог</h2>
+          <div class="alert-map-embed">
+            <iframe
+              src="https://alerts.in.ua/?embed"
+              title="Мапа повітряних тривог"
+              frameborder="0"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="currency-widget">
+          <div class="header">
+            <h2>Курс валют</h2>
+            <button class="toggle-view" onclick="toggleView()">
+              Перемкнути
+            </button>
+          </div>
+
+          <table class="currency-table" id="tableView">
+            <thead>
+              <tr>
+                <th>Валюта</th>
+                <th>Купівля</th>
+                <th>Продаж</th>
+                <th>НБУ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>USD/UAH</td>
+                <td id="usd-buy"><span class="arrow-up">▲</span>41.3000</td>
+                <td id="usd-sell">41.9750</td>
+                <td id="usd-nbu">41.6890</td>
+              </tr>
+              <tr>
+                <td>EUR/UAH</td>
+                <td id="eur-buy"><span class="arrow-up">▲</span>47.1000</td>
+                <td id="eur-sell">47.9000</td>
+                <td id="eur-nbu">47.4171</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="currency-cards" id="cardView">
+            <div class="card">
+              <strong>USD/UAH</strong><br />
+              Купівля: <span class="arrow-up">▲</span>41.3000<br />
+              Продаж: 41.9750<br />
+              НБУ: 41.689
+            </div>
+            <div class="card">
+              <strong>EUR/UAH</strong><br />
+              Купівля: <span class="arrow-up">▲</span>47.1000<br />
+              Продаж: 47.9000<br />
+              НБУ: 47.4171
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/script/script_main_menu.js"></script>
+  </body>
+</html>

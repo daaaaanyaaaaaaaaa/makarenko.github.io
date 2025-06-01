@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style_main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo">
+        <i class="bx bxs-bank"></i>
+        <span class="logo_name">Банк Грінченка</span>
+      </div>
+      <div class="bank_logo">
+        <img class="logo_up" src="/img/logo.png" alt="" />
+      </div>
+      <div class="name">
+        <span class="fop">ФОП Іван Петренко</span>
+        <span class="inn">ІПН: 0123456789</span>
+      </div>
+      <ul class="nav_links">
+        <li>
+          <a href="/main_menu.html">
+            <i class="bx bx-home"></i>
+            <span class="link_name">Головна сторінка</span>
+          </a>
+        </li>
+        <li>
+          <a href="/rakhunok.html">
+            <i class="bx bx-wallet"></i>
+            <span class="link_name">Рахунки</span>
+          </a>
+        </li>
+        <li>
+          <a href="/caption.html">
+            <i class="bx bx-pen"></i>
+            <span class="link_name">Документи на підпис</span>
+          </a>
+        </li>
+        <li>
+          <a href="/operation.html">
+            <i class="bx bx-money"></i>
+            <span class="link_name">Операції в гривні</span>
+          </a>
+        </li>
+        <li>
+          <a href="/card.html">
+            <i class="bx bx-credit-card"></i>
+            <span class="link_name">Картки</span>
+          </a>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-coin-stack"></i>
+              <span class="link_name">Кредити</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Кредити</a></li>
+            <li><a href="/credits-active.html">Діючі кредити</a></li>
+            <li><a href="/credits-proposition.html">Кредитні пропозиції</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-box"></i>
+              <span class="link_name">Депозити</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Депозити</a></li>
+            <li><a href="/my-deposit.html">Діючі депозити</a></li>
+            <li>
+              <a href="/depost-proposition.html">Депозитні пропозиції</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Налаштування</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Налаштування</a></li>
+            <li><a href="/settings.html">Змінити пароль</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/gift.html">
+            <i class="bx bx-gift"></i>
+            <span class="link_name">Отримати подарунок</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <i class="bx bx-exit"></i>
+            <span class="link_name">Вихід</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">Кредити</span>
+        </div>
+        <div class="create-button">
+          <a href="/create.html" class="plus"
+            >+ <span class="create">Створити платіж</span></a
+          >
+        </div>
+      </div>
+      <div class="credit-container">
+        <h2 class="section-title">Діючі кредити</h2>
+
+        <!-- Кнопка переходу -->
+        <div class="top-actions">
+          <a href="deposit-offers.html" class="btn-to">Діючі кредити</a>
+          <a href="/credits-proposition.html" class="btn-go-to"
+            >Кредитні пропозиції</a
+          >
+        </div>
+      </div>
+
+      <div class="credits-active">
+        <h2>Інформація по діючих кредитах</h2>
+
+        <table class="credit-table">
+          <thead>
+            <tr>
+              <th>Тип</th>
+              <th>Загальна заборгованість</th>
+              <th>Прострочена заборгованість</th>
+              <th>Обов'язковий платіж</th>
+              <th>Дата платежу</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Відновлювальна кредитна лінія</td>
+              <td>999 999.00 UAH</td>
+              <td>0.00 UAH</td>
+              <td>50 000.00 UAH</td>
+              <td>02.08.2023</td>
+            </tr>
+            <tr>
+              <td>Відновлювальна кредитна лінія</td>
+              <td>56 565.00 UAH</td>
+              <td>0.00 UAH</td>
+              <td>3 212.00 UAH</td>
+              <td>25.01.2023</td>
+            </tr>
+            <tr>
+              <td>Інвестиційний кредит</td>
+              <td>10.00 USD</td>
+              <td>0.00 USD</td>
+              <td>1.01 USD</td>
+              <td>03.02.2023</td>
+            </tr>
+            <tr>
+              <td>Інвестиційний кредит</td>
+              <td>1 000.00 EUR</td>
+              <td>0.00 EUR</td>
+              <td>4 321.00 EUR</td>
+              <td>03.10.2022</td>
+            </tr>
+            <tr>
+              <td>Кредит на придбання обладнання з компенсацією</td>
+              <td>629 600.54 UAH</td>
+              <td>0.00 UAH</td>
+              <td>10 534.02 UAH</td>
+              <td>01.09.2022</td>
+            </tr>
+            <tr>
+              <td>Кредитний ліміт на рахунок</td>
+              <td>19 645.76 UAH</td>
+              <td class="overdue">119 645.76 UAH</td>
+              <td>0.00 UAH</td>
+              <td>05.07.2022</td>
+            </tr>
+            <tr>
+              <td>Кредит під заставу депозиту</td>
+              <td>9 803 284.12 UAH</td>
+              <td>0.00 UAH</td>
+              <td>9 801 106.24 UAH</td>
+              <td>19.11.2022</td>
+            </tr>
+            <tr>
+              <td>Фінансовий лізинг</td>
+              <td>836 599.13 UAH</td>
+              <td>0.00 UAH</td>
+              <td>119 559.13 UAH</td>
+              <td>25.08.2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="/script/script_main_menu.js"></script>
+  </body>
+</html>

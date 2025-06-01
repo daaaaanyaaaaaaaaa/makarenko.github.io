@@ -1,0 +1,133 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.inContainer{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e98a7d9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e97a7;
+}
+
+img{
+        border-style: none;
+        padding: 10px;
+        max-block-size: 100px;
+}
+
+nav{
+    background-color: #fff;
+}
+
+
+.download_logo{
+    display: flex;
+        justify-content: center;
+}
+
+.text_up{
+    display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.logo_up{
+    grid-column-start: 1
+}
+
+.open_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid #1e98a7d9;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+}
+
+.open{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+    padding-right: 30px;
+    grid-column-start: 5
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid #1e98a7d9;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+}
+
+.phone:hover{
+    background-color: #1e97a7;
+    transition: background-color 0.5s ease;
+    color: #fff;
+}
+
+.open_text:hover {
+    background-color: #1e97a7;
+    transition: background-color 0.5s ease;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}

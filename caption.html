@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style_main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo">
+        <i class="bx bxs-bank"></i>
+        <span class="logo_name">Банк Грінченка</span>
+      </div>
+      <div class="bank_logo">
+        <img class="logo_up" src="/img/logo.png" alt="" />
+      </div>
+      <div class="name">
+        <span class="fop">ФОП Іван Петренко</span>
+        <span class="inn">ІПН: 0123456789</span>
+      </div>
+      <ul class="nav_links">
+        <li>
+          <a href="/main_menu.html">
+            <i class="bx bx-home"></i>
+            <span class="link_name">Головна сторінка</span>
+          </a>
+        </li>
+        <li>
+          <a href="/rakhunok.html">
+            <i class="bx bx-wallet"></i>
+            <span class="link_name">Рахунки</span>
+          </a>
+        </li>
+        <li>
+          <a href="/caption.html">
+            <i class="bx bx-pen"></i>
+            <span class="link_name">Документи на підпис</span>
+          </a>
+        </li>
+        <li>
+          <a href="/operation.html">
+            <i class="bx bx-money"></i>
+            <span class="link_name">Операції в гривні</span>
+          </a>
+        </li>
+        <li>
+          <a href="/card.html">
+            <i class="bx bx-credit-card"></i>
+            <span class="link_name">Картки</span>
+          </a>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-coin-stack"></i>
+              <span class="link_name">Кредити</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Кредити</a></li>
+            <li><a href="/credits-active.html">Діючі кредити</a></li>
+            <li><a href="/credits-proposition.html">Кредитні пропозиції</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-box"></i>
+              <span class="link_name">Депозити</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Депозити</a></li>
+            <li><a href="/my-deposit.html">Діючі депозити</a></li>
+            <li>
+              <a href="/depost-proposition.html">Депозитні пропозиції</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon_link">
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="link_name">Налаштування</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub_menu">
+            <li><a class="link_name" href="#">Налаштування</a></li>
+            <li><a href="/settings.html">Змінити пароль</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/gift.html">
+            <i class="bx bx-gift"></i>
+            <span class="link_name">Отримати подарунок</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html">
+            <i class="bx bx-exit"></i>
+            <span class="link_name">Вихід</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">Документи на підпис</span>
+        </div>
+        <div class="create-button">
+          <a href="/create.html" class="plus"
+            >+ <span class="create">Створити платіж</span></a
+          >
+        </div>
+      </div>
+      <div class="signature-documents">
+        <div class="filters">
+          <label for="date">Дата:</label>
+          <input type="date" id="date-start" value="2025-05-08" />
+          <span>–</span>
+          <input type="date" id="date-end" value="2025-05-08" />
+        </div>
+        <a href="/error.html" class="sign-btn"
+          ><i class="bx bx-key"></i> Підписати</a
+        >
+
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Обрати</th>
+              <th>Тип</th>
+              <th>Статус</th>
+              <th>Номер</th>
+              <th>Дата</th>
+              <th>Сума</th>
+              <th>Валюта</th>
+              <th>Платник</th>
+              <th>Одержувач</th>
+              <th>Призначення</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Гривневий</td>
+              <td>Введений</td>
+              <td>140</td>
+              <td>08.05.2025</td>
+              <td>1 000.00</td>
+              <td>UAH</td>
+              <td>ФОП Петренко І.</td>
+              <td>ФОП Сковорода Г.</td>
+              <td>
+                Оплата товару <br />
+                згідно з договором<br />
+                №143
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Купівля валюти</td>
+              <td>Очікує</td>
+              <td>139</td>
+              <td>07.05.2025</td>
+              <td>550.50</td>
+              <td>USD</td>
+              <td>Петренко І.</td>
+              <td>Петренко І.</td>
+              <td>Купівля валюти</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Переказ валюти</td>
+              <td>Введений</td>
+              <td>138</td>
+              <td>07.05.2025</td>
+              <td>1 000.00</td>
+              <td>USD</td>
+              <td>ФОП Петренко І.</td>
+              <td>ФОП Шевченко Т.</td>
+              <td>Переказ валюти</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>Касовий ордер</td>
+              <td>Чернетка</td>
+              <td>137</td>
+              <td>06.05.2025</td>
+              <td>100 000.00</td>
+              <td>UAH</td>
+              <td>ФОП Петренко І.</td>
+              <td>Петренко І.</td>
+              <td>
+                Завява на<br />
+                отримання <br />08.05.2025 в 12:00 <br />готівки на суму <br />
+                100 000.00 грн.
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>SWIFT</td>
+              <td>Введений</td>
+              <td>136</td>
+              <td>06.05.2025</td>
+              <td>1 000.00</td>
+              <td>USD</td>
+              <td>ФОП Петренко І.</td>
+              <td>Петренко І.</td>
+              <td>due to contract 123</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="/script/script_main_menu.js"></script>
+  </body>
+</html>
